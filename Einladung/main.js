@@ -59,7 +59,7 @@ function displayPage(page){
         document.getElementById("textfield").innerHTML = `
         Mit vollstem Respekt,<br />
         Bürgermeister Cooky und Generalsekretär Hekates. <br />
-        <img class="signatures" src="/img/signatures.png" />
+        <img class="signatures" src="http://hekates.github.io/Einladung/img/signatures.png" />
 
         <br/>Überbracht von Bote Klaus.
                 `

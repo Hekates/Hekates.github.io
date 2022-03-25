@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bote Franz | Einladung</title>
+    <script src="http://hekates.github.io/Projekt/Einladung/main.js"></script>
+
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/minecraftia"
+      type="text/css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #000000;
+
+        font-family: "MinecraftiaRegular";
+      }
+      .page {
+        width: 45rem;
+        height: 55rem;
+        position: relative;
+        margin: 3rem auto;
+      }
+      .main-img {
+        width: auto;
+        height: 55rem;
+      }
+      .text {
+        font-size: 2rem;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        top: 4.2rem;
+        left: 4rem;
+        max-width: 38rem;
+      }
+      .arrow-right {
+        width: 90px;
+        height: 50px;
+        position: absolute;
+        bottom: 3rem;
+        right: 8rem;
+        background-image: url(http://hekates.github.io/Projekt/img/arrow-right-empty.png);
+        display: inline-block;
+      }
+      .arrow-right:hover {
+        background-image: url(http://hekates.github.io/Projekt/img/arrow-right-hover.png);
+      }
+      .arrow-left {
+        width: 90px;
+        height: 50px;
+        position: absolute;
+        bottom: 3rem;
+        left: 6rem;
+        background-image: url(http://hekates.github.io/Projekt/img/arrow-left-empty.png);
+        display: inline-block;
+      }
+      .arrow-left:hover {
+        background-image: url(http://hekates.github.io/Projekt/img/arrow-left-hover.png);
+      }
+      .signatures {
+        width: 467px;
+        height: 92px;
+        padding-top: 5rem;
+        padding-bottom: 19rem;
+      }
+      .stamp {
+        bottom: 10rem;
+        right: 5rem;
+        position: absolute;
+        width: 20rem;
+        opacity: 0.1;
+      }
+    </style>
+  </head>
+  <body onload="displayPage(0)">
+    <div class="page">
+      <img
+        class="main-img"
+        src="http://hekates.github.io/Projekt/img/page.png"
+      />
+      <img
+        id="stamp"
+        class="stamp"
+        src="http://hekates.github.io/Projekt/img/stamp.png"
+      />
+      <div class="text" id="textfield"></div>
+      <div id="right" onclick="nextPage()" class="arrow-right"></div>
+      <div id="left" onclick="lastPage()" class="arrow-left"></div>
+    </div>
+  </body>
+</html>
